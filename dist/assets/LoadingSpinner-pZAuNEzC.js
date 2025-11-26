@@ -1,0 +1,1 @@
+import{j as s,e as n}from"./index-CGL-XOiJ.js";const d=({size:r="md",className:a})=>{const e={sm:"h-4 w-4",md:"h-6 w-6",lg:"h-8 w-8"};return s.jsx("div",{className:n("animate-spin rounded-full border-2 border-gray-300 border-t-blue-600",e[r],a),role:"status","aria-label":"Loading",children:s.jsx("span",{className:"sr-only",children:"Loading..."})})};export{d as L};

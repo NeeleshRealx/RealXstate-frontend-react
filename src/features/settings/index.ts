@@ -1,0 +1,42 @@
+// Settings feature exports
+export { default as SettingsHubPage } from './pages/SettingsHubPage';
+export { default as BusinessProfilePage } from './pages/BusinessProfilePage';
+export { default as BranchesPage } from './pages/BranchesPage';
+export { default as OpeningHoursPage } from './pages/OpeningHoursPage';
+export { default as QRCodeManagement } from './pages/QRCodeManagement';
+export { default as TableSetup } from './pages/TableSetup';
+export { default as AccountSettingsPage } from './pages/AccountSettingsPage';
+export { default as NotificationsPage } from './pages/NotificationsPage';
+export { default as IntegrationsPage } from './pages/IntegrationsPage';
+export { default as Profile } from './pages/Profile';
+export { default as TimezoneDemo } from './pages/TimezoneDemo';
+export { default as Settings } from './pages/Settings';
+
+// Settings components
+export { default as Branches } from './components/Branches';
+export { default as BranchForm } from './components/BranchForm/BranchForm';
+export { default as BranchList } from './components/BranchList/BranchList';
+export { default as BranchModal } from './components/BranchModal';
+export { default as BranchOpeningHours } from './components/BranchOpeningHours';
+export { default as BranchSelector } from './components/BranchSelector/BranchSelector';
+export { default as BulkGenerateModal } from './components/BulkGenerateModal';
+export { default as BusinessProfile } from './components/BusinessProfile';
+export { default as BusinessProfileForm } from './components/BusinessProfileForm';
+export { default as CSVImportModal } from './components/CSVImportModal';
+export { default as DayCard } from './components/DayCard/DayCard';
+export { default as DualQRCodeModal } from './components/DualQRCodeModal';
+export { default as OpeningHours } from './components/OpeningHours';
+export { default as Pagination } from './components/Pagination';
+export { default as QRCodeCard } from './components/QRCodeCard';
+export { default as QRCodeFilters } from './components/QRCodeFilters';
+export { default as QRCodeGrid } from './components/QRCodeGrid';
+export { default as QRCodePagination } from './components/QRCodePagination';
+export { default as QRCodeViewerModal } from './components/QRCodeViewerModal';
+export { default as SearchAndFilters } from './components/SearchAndFilters';
+export { default as SettingsCard } from './components/SettingsCard';
+export { default as SettingsDemo } from './components/SettingsDemo';
+export { default as SettingsGrid } from './components/SettingsGrid';
+export { default as SettingsHub } from './components/SettingsHub';
+export { default as TableList } from './components/TableList';
+export { default as TableModal } from './components/TableModal';
+export { default as TimeSlot } from './components/TimeSlot/TimeSlot';
