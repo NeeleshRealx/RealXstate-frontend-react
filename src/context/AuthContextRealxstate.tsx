@@ -1,6 +1,8 @@
 // src/context/AuthContext.tsx
 import { deleteCookie, getCookie } from '@/utils/cookieUtils';
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import api from "@/lib/api";
+
 
 // Define the shape of the context
 interface AuthContextType {
@@ -38,11 +40,13 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   };
 
   // Simulate a logout function
-  const logout = () => {
+  const logout = async() => {
     setIsAuthenticated(false);
     setIsLoading(false);
     setUser(null);
-    deleteCookie("token")
+    const response = await api.post('/logout');
+        console.log(response,"response")
+        deleteCookie("token")
   };
 
   // Load authentication state from localStorage on initial render

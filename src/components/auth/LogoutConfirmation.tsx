@@ -18,6 +18,7 @@ export const LogoutConfirmation: React.FC<LogoutConfirmationProps> = ({
   isLoading = false,
   userName
 }) => {
+
   return (
     <Modal
       isOpen={isOpen}
