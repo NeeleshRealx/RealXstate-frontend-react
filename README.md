@@ -1,4 +1,4 @@
-# ServAI Portal
+# RealXstate Portal
 
 A modern, responsive AI service management platform built with React, TypeScript, and AWS Amplify.
 

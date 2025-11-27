@@ -20,10 +20,10 @@ const AllRoutes = () => {
   console.log('AllRoutes - publicRoutes:', publicRoutes);
   console.log('AllRoutes - authProtectedRoutes:', authProtectedRoutes);
   
-  if (isLoading) {
-    console.log('AllRoutes - showing loading spinner');
-    return <LoadingSpinner />;
-  }
+  // if (isLoading) {
+  //   console.log('AllRoutes - showing loading spinner');
+  //   return <LoadingSpinner />;
+  // }
   
   return (
     <Suspense fallback={<LoadingSpinner />}>

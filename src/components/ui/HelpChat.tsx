@@ -21,7 +21,7 @@ const HelpChat: React.FC = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
           <div className="relative w-full max-w-md rounded-lg bg-background p-6 shadow-lg">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="text-lg font-semibold">ServAI Help</h2>
+              <h2 className="text-lg font-semibold">RealXstate Help</h2>
               <Button
                 variant="ghost"
                 size="icon"
@@ -33,7 +33,7 @@ const HelpChat: React.FC = () => {
             
             <div className="space-y-4">
               <p className="text-sm text-muted-foreground">
-                Welcome to ServAI! How can we help you today?
+                Welcome to RealXstate! How can we help you today?
               </p>
               
               <div className="space-y-2">

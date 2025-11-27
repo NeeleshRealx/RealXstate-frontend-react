@@ -1,5 +1,5 @@
 // src/context/AuthContext.tsx
-import { getCookie } from '@/utils/cookieUtils';
+import { deleteCookie, getCookie } from '@/utils/cookieUtils';
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
 // Define the shape of the context
@@ -26,11 +26,15 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   // Simulate a login function
   const login = (token: string, user: any) => {
+    console.log(token, "token" )
+    if(token){
     setIsAuthenticated(true);
     setIsLoading(false);
     setUser(user);
+    }
+ 
     // In a real app, you would store the token in localStorage or session storage
-     document.cookie = `authToken=${token}; path=/;`
+     
   };
 
   // Simulate a logout function
@@ -38,7 +42,7 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     setIsAuthenticated(false);
     setIsLoading(false);
     setUser(null);
-    localStorage.removeItem('authToken');
+    deleteCookie("token")
   };
 
   // Load authentication state from localStorage on initial render

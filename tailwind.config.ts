@@ -24,7 +24,7 @@ export default {
 			'card-lg': '0 6px 16px rgb(139 92 246 / 25%)',
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'], // Different font for ServAI
+				sans: ['Inter', 'sans-serif'], // Different font for RealXstate
 				// serif: ['Georgia', 'serif'],
 				// mono: ['Menlo', 'monospace'],
 			},

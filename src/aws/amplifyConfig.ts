@@ -50,8 +50,8 @@ const devConfig: AmplifyConfig = {
         oauth: {
           domain: DEV_DOMAIN,
           scopes: ['openid', 'email', 'profile', 'phone', 'aws.cognito.signin.user.admin'],
-          redirectSignIn: ['servai://', 'myapp://'],
-          redirectSignOut: ['servai://', 'myapp://'],
+          redirectSignIn: ['RealXstate://', 'myapp://'],
+          redirectSignOut: ['RealXstate://', 'myapp://'],
           responseType: 'code',
           providers: ['Google', 'Apple'],
         }
@@ -81,8 +81,8 @@ const prodConfig: AmplifyConfig = {
         oauth: {
           domain: DOMAIN,
           scopes: ['openid', 'email', 'profile', 'phone', 'aws.cognito.signin.user.admin'],
-          redirectSignIn: ['servai://', 'myapp://'],
-          redirectSignOut: ['servai://', 'myapp://'],
+          redirectSignIn: ['RealXstate://', 'myapp://'],
+          redirectSignOut: ['RealXstate://', 'myapp://'],
           responseType: 'code',
           providers: ['Google', 'Apple'],
         }
@@ -103,6 +103,6 @@ const prodConfig: AmplifyConfig = {
 // Use development config if in development mode, otherwise use production config
 const config = isDevelopment ? devConfig : prodConfig;
 
-console.log(`🔧 ServAI Amplify Configuration: ${isDevelopment ? 'DEVELOPMENT' : 'PRODUCTION'}`);
+console.log(`🔧 RealXstate Amplify Configuration: ${isDevelopment ? 'DEVELOPMENT' : 'PRODUCTION'}`);
 
 Amplify.configure(config as any);

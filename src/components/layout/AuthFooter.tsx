@@ -6,7 +6,7 @@ export const AuthFooter: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="text-sm text-gray-500">
-            © 2024 ServAI. All rights reserved.
+            © 2024 RealXstate. All rights reserved.
           </div>
           <div className="flex space-x-6">
             <a 

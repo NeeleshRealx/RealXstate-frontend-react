@@ -15,31 +15,31 @@ import { BranchProvider } from './contexts/BranchContext';
 
 const queryClient = new QueryClient();
 
-// Component to conditionally render HelpChat
-const ConditionalHelpChat = () => {
-  const location = useLocation();
-  const isPublicRoute = location.pathname.startsWith('/public');
+// // Component to conditionally render HelpChat
+// const ConditionalHelpChat = () => {
+//   const location = useLocation();
+//   const isPublicRoute = location.pathname.startsWith('/public');
   
-  // Don't render HelpChat on public routes
-  if (isPublicRoute) {
-    return null;
-  }
+//   // Don't render HelpChat on public routes
+//   if (isPublicRoute) {
+//     return null;
+//   }
   
-  return <HelpChat />;
-};
+//   return <HelpChat />;
+// };
 
-// Component to conditionally render ThemeToggle
-const ConditionalThemeToggle = () => {
-  const location = useLocation();
-  const isPublicRoute = location.pathname.startsWith('/public');
+// // Component to conditionally render ThemeToggle
+// const ConditionalThemeToggle = () => {
+//   const location = useLocation();
+//   const isPublicRoute = location.pathname.startsWith('/public');
   
-  // Don't render ThemeToggle on public routes
-  if (isPublicRoute) {
-    return null;
-  }
+//   // Don't render ThemeToggle on public routes
+//   if (isPublicRoute) {
+//     return null;
+//   }
   
-  return <ThemeToggle />;
-};
+//   return <ThemeToggle />;
+// };
 
 const App = () => {
   console.log('App component rendering...');
@@ -53,7 +53,6 @@ const App = () => {
               <BranchProvider>
                 <div className="font-sans">
                   {/* <ConditionalThemeToggle /> */}
-                  <ConditionalHelpChat />
                   {/* <AuthStatus /> */}
                   <Toaster />
                   <Sonner />
@@ -67,6 +66,20 @@ const App = () => {
       </BrowserRouter>
     </ThemeProvider>
   );
+  //   return (
+  //     <BrowserRouter>
+  //           <AuthProvider>
+  //               <div className="font-sans">
+  //                 {/* <ConditionalThemeToggle /> */}
+  //                 {/* <AuthStatus /> */}
+  //                 <Toaster />
+  //                 <Sonner />
+  //                 <ScrollToTop />
+  //                 <AllRoutes />
+  //               </div>
+  //           </AuthProvider>
+  //     </BrowserRouter>
+  // );
 };
 
 export default App;

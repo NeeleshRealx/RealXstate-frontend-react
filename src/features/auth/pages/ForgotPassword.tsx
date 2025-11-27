@@ -149,7 +149,7 @@ const ForgotPassword: React.FC = () => {
                   <MessageCircle className="h-8 w-8 text-white" />
                 </div>
               </div>
-              <h1 className="text-2xl font-semibold text-gray-900 mb-1">ServAI</h1>
+              <h1 className="text-2xl font-semibold text-gray-900 mb-1">RealXstate</h1>
               <p className="text-sm text-gray-500 mb-6">Merchant Portal</p>
               <h2 className="text-xl font-medium text-gray-900 mb-2">
                 Forgot Password

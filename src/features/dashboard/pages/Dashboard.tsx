@@ -45,7 +45,7 @@ const Dashboard: React.FC = () => {
         <div>
           <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
           <p className="text-muted-foreground">
-            Welcome to your ServAI dashboard. Here's an overview of your services and performance.
+            Welcome to your RealXstate dashboard. Here's an overview of your services and performance.
           </p>
         </div>
         

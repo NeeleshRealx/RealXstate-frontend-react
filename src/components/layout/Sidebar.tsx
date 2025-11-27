@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart3, Package, Settings, User, LogOut, ShoppingBag, ForkKnife } from 'lucide-react';
+import { BarChart3, Package, Settings, User, LogOut, Scale , Brain  } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '@/context/AuthContext';
 import { LogoutButton } from '@/features/auth/components/LogoutButton';
@@ -46,8 +46,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem }) => {
   const currentActiveItem = getActiveItem();
 
   const menuItems: NavigationItem[] = [
-    { id: 'orders', label: 'Orders', icon: ShoppingBag, href: '/orders' },
-    { id: 'menu', label: 'Menu', icon: ForkKnife, href: '/menu' },
+    { id: 'orders', label: 'Lawyers', icon: Scale , href: '/orders' },
+    { id: 'menu', label: 'AI', icon: Brain , href: '/menu' },
     // { id: 'analytics', label: 'Analytics', icon: BarChart3, href: '/analytics' },
   ];
 
@@ -65,7 +65,7 @@ const Sidebar: React.FC<SidebarProps> = ({ activeItem }) => {
           <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-sm">S</span>
           </div>
-          <span className="text-xl font-semibold text-gray-900">ServAI</span>
+          <span className="text-xl font-semibold text-gray-900">RealXstate</span>
         </div>
       </div>
 

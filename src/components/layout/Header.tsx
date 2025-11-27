@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-sm">S</span>
           </div>
-          <span className="text-xl font-semibold">ServAI</span>
+          <span className="text-xl font-semibold">RealXstate</span>
         </div>
 
         {/* User Menu */}

@@ -70,11 +70,8 @@ export const LoginForm: React.FC = () => {
            navigate('/dashboard');
         }
       } catch (error: any) {
-        if (error.response && error.response.status === 404) {
-          setSubmitError('The requested resource was not found. Please check the URL and try again.');
-          toast.error(error.response.data);
-        }
-        console.log(error)
+          setSubmitError(error.response.data);
+          toast.error('Invalid credentials');
       }
       // For development, use the development token
       // if (import.meta.env.DEV && data.businessEmail === 'dev@serv-ai.com') {
@@ -104,11 +101,7 @@ export const LoginForm: React.FC = () => {
       
       
       // Add a small delay to ensure authentication state is properly set
-      setTimeout(() => {
-        console.log('[LoginForm] Redirecting to dashboard...');
-        navigate('/settings');
-      }, 100);
-      
+
     } catch (error: any) {
       console.error('Login error:', error);
       
@@ -152,7 +145,6 @@ export const LoginForm: React.FC = () => {
       setSubmitError('');
       
       // Use demo credentials for testing
-      await loginWithEmail('demo@serv-ai.com', 'demo123456');
       
       toast.success('Welcome to Harbour View Bistro demo!');
       
