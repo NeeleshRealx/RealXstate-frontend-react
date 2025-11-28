@@ -10,8 +10,8 @@ type UrlConfig = {
 const isDevelopment = true;
 
 export const api: ApiConfig = {
-  API_URL:  `http://3.105.82.55/api` ,
-  WEB_URL: `http://3.105.82.55/api`
+  API_URL:  `/api` ,
+  WEB_URL: `/api`
 };
 
 
