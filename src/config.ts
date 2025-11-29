@@ -9,8 +9,12 @@ type UrlConfig = {
 
 const isDevelopment = true;
 console.log(location.hostname,"location")
+const check = location.hostname === "localhost" ? "http://localhost:5555" : "/api"
+console.log(check,"check")
+console.log(location.hostname,"hostname")
+
 export const api: ApiConfig = {
-  API_URL:  location.hostname === "localhost" ? "http://localhost:5555" : "http://3.105.82.55/api" ,
+  API_URL:  location.hostname === "localhost" ? "http://localhost:5555" : "/api" ,
   WEB_URL: `http://3.105.82.55/api`
 };
 
