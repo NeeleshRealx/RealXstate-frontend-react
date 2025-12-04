@@ -194,7 +194,7 @@ export const LoginForm: React.FC = () => {
               <h1 className="text-2xl font-semibold text-gray-900 mb-1">RealXstate</h1>
               {/* <p className="text-sm text-gray-500 mb-6">Merchant Portal</p> */}
               <h2 className="text-xl font-medium text-gray-900">
-                Log in to your Account
+                Login to your Account
               </h2>
             </div>
 
